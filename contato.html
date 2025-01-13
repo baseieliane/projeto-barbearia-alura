@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Barbearia Alura - Contato</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1><img src="./assets/logo.png" alt="Logo Barbearia Alura"></h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html"> Home </a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form action="">
+            <label for="input-nome-completo">Nome Completo:</label>  <!--input e label quando são para informações sempre estão juntos-->
+            <input type="text" id="input-nome-completo" class="input-dados" placeholder="João da Silva" required>
+
+            <label for="input-email">E-mail:</label>
+            <input type="email" name="" id="input-email" class="input-dados" placeholder="exemplo@dominio.com" required>
+
+            <label for="input-telefone">Telefone:</label>
+            <input type="tel" name="" id="input-telefone" class="input-dados" placeholder="(XX) XXXXX-XXXX" required>
+
+            <label for="input-mensagem" required>Mensagem:</label>
+            <textarea name="" id="input-mensagem"  class="input-dados" cols="60" rows="10"></textarea>
+
+            <fieldset> <!--fieldset utilizado para agrupar elementos sobre o mesmo assunto e ao invés de utilizarmos a tag p, utilizamos a tag legend-->
+                <legend>Como você prefere ser contatado?</legend>
+                <label for="radio-email">                
+                    <input type="radio" name="contato" id="radio-email" value="email">E-mail
+                </label>
+                
+                <label for="radio-telefone">
+                    <input type="radio" name="contato" id="radio-telefone" value="telefone">Telefone
+                </label>
+                
+                <label for="radio-whatsapp"> 
+                    <input type="radio" name="contato" id="radio-whatsapp" value="whatsapp" checked>WhatsApp  <!--o atributo name categoriza todos os radios no mesmo grupo, ou seja, marca um e outro é desmarcado-->
+                </label>
+                
+
+            </fieldset>
+            <fieldset> 
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="" id="">
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+
+            <label for=""><input type="checkbox" class="checkbox-newsletter" checked>Gostaria de receber nossa newsletter?</label>
+
+            <input type="submit" value="Enviar formulário" class="input-enviar">
+        </form>
+        <h2>Horários de funcionamento:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>                
+                    <td>Sequnda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>                
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>                
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="./assets/logo-branco.png" alt="Logo Barbearia Alura">
+        <p class="rodape-texto">&copy; Copyright Barbearia Alura - 2025</p>
+    </footer>
+</body>
+</html>
